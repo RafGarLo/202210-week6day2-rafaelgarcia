@@ -1,5 +1,4 @@
 import { Sample } from "../project/components/sample";
-import styles from "./about.module.css";
 
 function About() {
     return (
