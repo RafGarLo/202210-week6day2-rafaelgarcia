@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { taskReducer } from "../../features/project/reducer/reducer";
+import { characterReducer } from "../../features/project/reducer/reducer";
 export const appStore = configureStore({
     reducer: {
-        tasks: taskReducer,
+        characters: characterReducer,
     },
 });
 

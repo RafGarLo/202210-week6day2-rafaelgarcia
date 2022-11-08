@@ -1,4 +1,4 @@
-import { Layout } from "../components/layout/layout";
+import { Layout } from "../../features/project/components/layout/layout";
 import { AppRoutes } from "../routes/app.routes";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
             <Layout>
                 <AppRoutes></AppRoutes>
             </Layout>
-            <div>aprendiendo react App</div>
+            <div>Add your own characters some time in the future</div>
         </>
     );
 }

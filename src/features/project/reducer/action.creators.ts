@@ -1,8 +1,10 @@
 import { createAction } from "@reduxjs/toolkit";
-import { Task } from "../../models/task";
+import { ICharacter } from "../../models/character";
 import { actionTypes } from "./action.types";
 
-export const loadActionCreator = createAction<Array<Task>>(actionTypes.load);
-export const addActionCreator = createAction<Task>(actionTypes.add);
-export const updateActionCreator = createAction<Task>(actionTypes.update);
-export const deleteActionCreator = createAction<Task>(actionTypes.delete);
+export const loadActionCreator = createAction<Array<ICharacter>>(
+    actionTypes.load
+);
+export const addActionCreator = createAction<ICharacter>(actionTypes.add);
+export const updateActionCreator = createAction<ICharacter>(actionTypes.update);
+export const deleteActionCreator = createAction<ICharacter>(actionTypes.delete);

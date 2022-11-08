@@ -6,7 +6,7 @@ describe("Given AppRoutes component", () => {
     describe("When we render the component And the route is home", () => {
         beforeEach(() => {
             render(
-                <Router initialEntries={["/", "/about"]} initialIndex={0}>
+                <Router initialEntries={["/", "/home"]} initialIndex={0}>
                     <AppRoutes />
                 </Router>
             );
