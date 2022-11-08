@@ -11,7 +11,7 @@ describe("Given Home component", () => {
                 </Router>
             );
 
-            const element = screen.getByText(/Home Page/);
+            const element = screen.getByText(/Season/i);
             expect(element).toBeInTheDocument();
         });
     });
