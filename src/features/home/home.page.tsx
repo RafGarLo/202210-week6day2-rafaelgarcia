@@ -6,7 +6,7 @@ function HomePage() {
         <>
             <main>
                 <h2 className={styles.title}>New Season Coming</h2>
-                <CharacterList></CharacterList>
+                {/* <CharacterList></CharacterList> faltan componentes para testear characterlist */}
             </main>
         </>
     );
