@@ -1,6 +1,7 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { ICharacter } from "../../models/character";
 import * as ac from "./action.creators";
+
 const initialState: Array<ICharacter> = [];
 export const characterReducer = createReducer(initialState, (builder) => {
     builder.addCase(ac.loadActionCreator, (_state, action) => action.payload);
@@ -14,7 +15,7 @@ export const characterReducer = createReducer(initialState, (builder) => {
         )
     );
     builder.addCase(ac.deleteActionCreator, (state, action) =>
-        state.filter((item) => item.id !== action.payload.id)
+        state.filter((item) => item.id !== action.payload)
     );
     builder.addDefaultCase((state) => state);
 });

@@ -4,7 +4,7 @@ export interface ICharacter {
     family: string;
     age: number;
     role: string;
-    status: boolean;
+    lifeStatus: boolean;
     kingdomYears?: number;
     customMessage?: string;
     weapon?: string;
@@ -12,4 +12,14 @@ export interface ICharacter {
     advisedPerson?: string;
     servingto?: string;
     assLickingLevel?: number;
+}
+
+export class CharacterModel {
+    lifeStatus: boolean | undefined;
+    constructor(
+        public name: string,
+        family: string,
+        age: number,
+        role: string
+    ) {}
 }
