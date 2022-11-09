@@ -1,4 +1,3 @@
-import { CharacterList } from "../project/components/character.list/character.list";
 import styles from "./home.page.module.css";
 
 function HomePage() {

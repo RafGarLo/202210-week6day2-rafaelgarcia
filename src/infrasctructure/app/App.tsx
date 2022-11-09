@@ -1,5 +1,4 @@
 import HomePage from "../../features/home/home.page";
-import { Layout } from "../../features/project/components/layout/layout";
 
 function App() {
     return (
