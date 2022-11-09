@@ -7,4 +7,6 @@ export const loadActionCreator = createAction<Array<ICharacter>>(
 );
 export const addActionCreator = createAction<ICharacter>(actionTypes.add);
 export const updateActionCreator = createAction<ICharacter>(actionTypes.update);
-export const deleteActionCreator = createAction<ICharacter>(actionTypes.delete);
+export const deleteActionCreator = createAction<ICharacter["id"]>(
+    actionTypes.delete
+);

@@ -1,19 +1,19 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter as Router } from "react-router-dom";
-import { Header } from "./header";
+import CharacterPage from "./character.page";
 
-describe("Given Header component", () => {
+describe("Given TodoPage component", () => {
     describe("When we render the component", () => {
         beforeEach(() => {
             render(
                 <Router>
-                    <Header />
+                    <CharacterPage />
                 </Router>
             );
         });
-        test('Then it should display "Character"', () => {
-            const title = /Zrones/i;
-            const element = screen.getAllByText(title);
+        test("Then it should display the title", () => {
+            const title = /Page/i;
+            const element = screen.getByText(title);
             expect(element).toBeInTheDocument();
         });
     });

@@ -2,7 +2,7 @@ import { Menu } from "../menu/menu";
 import styles from "./header.module.css";
 
 export function Header() {
-    const title = "Character List";
+    const title = "Game of Zrones";
     return (
         <>
             <header className={styles.header}>
