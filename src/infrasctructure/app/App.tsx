@@ -4,9 +4,8 @@ import { Layout } from "../../features/project/components/layout/layout";
 function App() {
     return (
         <>
-            <Layout>
-                <HomePage />
-            </Layout>
+            <HomePage />
+
             <div>Add your own characters some time in the future</div>
         </>
     );
